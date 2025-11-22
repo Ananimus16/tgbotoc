@@ -136,7 +136,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
 
 def main() -> None:
-    application = ApplicationBuilder().token("8391613040:AAF99H7dirMYfR0znJOCNHM_DbpoYG9s-Wo").build()
+    application = ApplicationBuilder().token("Your Token").build()
 
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler("start", start)],
@@ -157,4 +157,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+
     main()
